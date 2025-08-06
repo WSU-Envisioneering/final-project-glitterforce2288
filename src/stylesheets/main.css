@@ -91,8 +91,6 @@ nav a:hover{
   .image-wrapper img {
     max-width: 100%;
   }
-
-  /* You can hide non-essential stuff */
   footer {
     display: none;
   }
