@@ -1,15 +1,15 @@
 body{
-    background-color: pink;
+    background-color: #b782a7;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 h1{
     text-align: center;
-    background-color: rgb(252, 117, 139);
+    background-color: #9a6292;
     padding: 20px;
     border-radius: 20px;
     margin: 20px;
-
+    color: #f2c6d2;
 
 }
 p{
@@ -17,32 +17,118 @@ p{
     font-size: 20px;
     margin: 20px;
     padding: 10px;
-    background-color: rgb(252, 117, 139);
+    background-color: #9a6292;
     border-radius: 10px;
+    color: #f2c6d2;
+}
+footer{
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+    background-color:#9a6292;
+    color: #f2c6d2;
+}
+nav{
+    justify-content: center;
+    display: flex;
+    flex-wrap: nowrap;
+    background-color:#9a6292;               
+    padding: 10px;
+    border-radius: 10px;
+    color: #f2c6d2;
+    font-size: 20px;
+
+}
+figcaption{
+    text-align: center;
+    font-size: 18px;
+    margin: 10px;
+    padding: 5px;
+    background-color: #9a6292;
+    border-radius: 5px;
+    color: #f2c6d2;
+}
+h5{
+    text-align: center;
+    font-size: 18px;
+    padding: 5px;
+    background-color: #9a6292;
+    border-radius: 5px;
+    color: #f2c6d2;
+    font-weight: lighter;
+} 
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
+
+
+.image-wrapper {
+  display: flex;
+  justify-content: center;   
+  align-items: center;       
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.image-wrapper img {
+  width: 100%;
+  max-width: 600px;          
+  height: auto;
+  border-radius: 10px;
+}
+.image-wrapper img:hover{
+   transform:rotate(180deg);
+    transition: transform 0.5s ease;
+}
+nav a{
+    color: #f2c6d2;
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px;
+    color: #f2c6d2;
+}
+a{
+    color: #f2c6d2;
+    text-decoration: none;
+}
+a:hover{
+    color:#d9b2bc;
+    text-decoration: underline;
+}
+nav a:hover{
+    color: #d9b2bc;
+    text-decoration: underline;
 }
 form{
     text-align: center;
     font-size: 25px;
     margin: 60px;
     padding: 10px;
-    background-color: rgb(252, 117, 139);
+    background-color: #9a6292;
     border-radius: 10px;
-
+    color: #f2c6d2;
 }
-footer{
-    text-align: center;
-    font-size: 25px;
-    margin: 20px;
-    padding: 10px;
-    background-color: rgb(252, 117, 139);
-    border-radius: 10px;
-}
-nav{
-    justify-content: center;
-    display: flex;
-    flex-wrap: nowrap;
-    background-color: rgb(252, 117, 139);               
-    padding: 10px;
-    border-radius: 10px;
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
 
+  nav {
+    font-size: 16px;
+  }
+
+  .image-wrapper img {
+    max-width: 100%;
+  }
+
+  /* You can hide non-essential stuff */
+  footer {
+    display: none;
+  }
+   img {
+    max-width: 500px;
+  }
 }

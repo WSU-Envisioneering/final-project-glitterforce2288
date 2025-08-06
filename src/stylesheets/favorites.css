@@ -1,62 +1,108 @@
 body{
-    background-color: pink;
+    background-color: #b782a7;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 h1{
     text-align: center;
-    background-color: rgb(252, 117, 139);
+    background-color: #9a6292;
     padding: 20px;
     border-radius: 20px;
     margin: 20px;
+    color: #f2c6d2;
 
-
-}
-h2{
-    text-align: center;
-    background-color: rgb(252, 117, 139);
-    padding: 15px;
-    border-radius: 15px;
-    margin: 15px;
 }
 p{
     text-align: center;
     font-size: 20px;
     margin: 20px;
     padding: 10px;
-    background-color: rgb(252, 117, 139);
+    background-color: #9a6292;
     border-radius: 10px;
-}
-form{
-    text-align: center;
-    font-size: 25px;
-    margin: 60px;
-    padding: 10px;
-    background-color: rgb(252, 117, 139);
-    border-radius: 10px;
-
+    color: #f2c6d2;
 }
 footer{
     text-align: center;
     font-size: 25px;
-    margin: 20px;
     padding: 10px;
-    background-color: rgb(252, 117, 139);
-    border-radius: 10px;
+    background-color:#9a6292;
+    color: #f2c6d2;
 }
 nav{
     justify-content: center;
     display: flex;
     flex-wrap: nowrap;
-    background-color: rgb(252, 117, 139);               
+    background-color:#9a6292;               
     padding: 10px;
     border-radius: 10px;
+    color: #f2c6d2;
+    font-size: 20px;
 
+}
+nav a{
+    color: #f2c6d2;
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px;
+    color: #f2c6d2;
+}
+a{
+    color: #f2c6d2;
+    text-decoration: none;
+}
+a:hover{
+    color:#d9b2bc;
+    text-decoration: underline;
+}
+nav a:hover{
+    color: #d9b2bc;
+    text-decoration: underline;
 }
 table, th, td{
     width: 80%;
     margin: 0 auto;
-    border: 1px solid black;
+    border: 3px solid #7e417d;
     border-collapse: collapse;
     text-align: center;
+    color: #f2c6d2;
+}
+
+/* Style even table rows */
+tr:nth-child(odd) {
+    background-color: #9a6292;
+}
+h2{
+    text-align: center;
+    font-size: 25px;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    color: #f2c6d2;
+    font-weight: lighter;
+}
+li{
+    text-align: center;
+    font-size: 20px;
+    background-color: #9a6292;
+    border-radius: 5px;
+    color: #f2c6d2;
+    list-style-type: upper-roman;
+}
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  nav {
+    font-size: 16px;
+  }
+
+  .image-wrapper img {
+    max-width: 100%;
+  }
+
+  /* You can hide non-essential stuff */
+  footer {
+    display: none;
+  }
 }
